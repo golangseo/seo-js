@@ -1,0 +1,16 @@
+腾讯云root权限
+https://www.jianshu.com/p/2969f82e9099
+https://blog.csdn.net/eadzsdad/article/details/123588916
+
+
+sudo passwd
+修改密码
+su 切换root用户
+vi /etc/ssh/sshd_config
+PasswordAuthentication no修改为yes
+
+esc+:wq保存
+
+cat /etc/ssh/sshd_config
+
+systemctl restart sshd
