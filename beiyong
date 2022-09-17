@@ -1,0 +1,78 @@
+systemctl status botadmin >log.txt
+systemctl restart botadmin
+systemctl restart mysql
+
+systemctl restart admin 【密码错误搞重启这个】
+lnmp mysql restart 【数据库错误搞重启这个】
+lnmp start lnmp重启
+
+/user/local/mysql/var 删除index 001 002 003 【ibdata1不能删除】
+/etc/init.d/mysql restart 【不行多重启几次】
+scp -r 路劲 root@ip:路径
+chmod -R .cache/ 谷歌授权
+
+netstat -tnlp 查询端口
+systemctl restart botadmin 
+systemctl status botadmin -l
+systemctl status botadmin > log.txt
+usr/local/mysql/var 日志可以删除【ibdate1不能删除】
+数据库地址/home/wwwroot/default 第一个
+重置数据库密码 sh /data/botadmin/install/lnmp/tools/reset_mysql_root_password.sh
+
+
+
+cd /home/wwwroot || exit 1
+echo -e "当前路径:" $(pwd)
+
+# find ./ -mindepth 3 -type f -name "*.html" -exec grep -l "传承" {} \;
+# find /home/wwwroot/www.29058177.com/public_html -maxdepth 1 -type f -name 'index.html' -exec sed -i 's/传承\|心安\|泰东方\|恒健/南方39/g' {} \;
+
+
+
+nohup find /home/wwwroot -mindepth 3 -type f -name "*.html" -exec sed -i 's/传承\|心安\|泰东方\|恒健/南方39/g' {} \; &
+
+
+/data/botadmin/data/db base_cfg 数据 usename 修改名字
+
+
+
+正则表达式
+
+^\s*(\S+)\s*$
+{"name": "$1"},
+
+【使用scp命令远程复制文件时可能碰到not a regular file的错误，
+解决方法： 在scp命令后面加上-r 例： 
+scp -r /etc/a.txt root@10.10.10.10:~/ 】
+
+压缩 tar -zcvf nfivf.tar.gz ./*
+解压 tar -xvf web.tar.gz
+解压 unzip zipped_file.zip
+
+
+帝国cms修改文章时间
+UPDATE bot_ecms_news SET newstime ='1620807153' 
+修改为2021-05-12 16:12:33
+
+
+wget http://auth.nfivf.com:9090/mirror/install.sh && sh ./install.sh mirror=cn 国内安装
+
+将当前前目录下的所有文件与子目录的拥有者皆设为 runoob，群体的使用者 runoobgroup:
+chown -R runoob:runoobgroup ./*
+
+
+
+
+location /tag/ {
+rewrite "^/tag/([^/]+)" /e/tags/?tagname=$1 last;
+}
+
+
+/usr/local/nginx/conf/rewrite/empirecms.conf
+
+
+数据库登陆地址
+登陆地址 /home/wwwroot/default ip:文件名
+密码地址 /data/botadmin/data/data .my.cnf
+
+systemctl restart firewalld
